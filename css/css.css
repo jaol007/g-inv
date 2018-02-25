@@ -1,0 +1,149 @@
+@import "normalize.css";
+
+/**  * VARIABLES  */
+
+:root {
+    /**  * COLORES UNAD */
+    --color-azul: #005883;
+    --color-gris: #ebebeb;
+    --color-naranja: #f47920;
+    --color-amarillo: #F0B429;
+    --color-verde: #50B748;
+    --color-violeta: #A54686;
+
+    --color-texto: #333333;
+    --color-url: #43C7F4;
+
+    --color-code-bg: #f3f6fa;
+    --color-code-text: #567482;
+    --color-code-border: #dce6f0;
+}
+
+/* CUERPO */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-texto);
+    height: 100%;
+}
+
+a {
+    color: var(--color-url);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: var(--color-azul);
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+article {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+label {
+    margin-top: 12px;
+}
+
+code {
+    padding: 2px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--color-code-text);
+    background-color: var(--color-code-bg);
+    border-radius: 0.3rem;
+}
+
+.pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: var(--color-code-text);
+    word-wrap: normal;
+    background-color: var(--color-code-bg);
+    border: solid 1px var(--color-code-border);
+    border-radius: 0.3rem;
+}
+> code {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-code-text);
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    padding-top: 0;
+    margin-top: 0;
+    background-color: var(--color-azul);
+    height: 100px;
+    align-items: center;
+}
+
+div#footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div#creditos {
+    float: left;
+    width: 70%;
+    font-size: 14px;
+    color: var(--color-naranja);
+    font-weight: bold;
+    margin: 4px;
+    padding-left: 15px;
+}
+
+/* Contacto Pie */
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.chip a {
+    color: var(--color-azul);
+}
